@@ -22,7 +22,7 @@ import (
 	"fmt"
 	"io"
 
-	cdx "github.com/jprobinson/cyclonedx-go"
+	cdx "github.com/CycloneDX/cyclonedx-go"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 
@@ -66,7 +66,7 @@ func NewGenerator(moduleDir string, opts ...Option) (generate.Generator, error) 
 func (g generator) Generate() (*cdx.BOM, error) {
 	// Cheap trick to make Go download all required modules in the module graph
 	// without modifying go.sum (as `go mod download` would do).
-	err := gocmd.ModWhy(g.logger, g.moduleDir, []string{"github.com/jprobinson/cyclonedx-go"}, io.Discard)
+	err := gocmd.ModWhy(g.logger, g.moduleDir, []string{"github.com/CycloneDX/cyclonedx-go"}, io.Discard)
 	if err != nil {
 		return nil, fmt.Errorf("failed to download modules: %w", err)
 	}

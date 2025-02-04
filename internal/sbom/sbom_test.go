@@ -20,7 +20,7 @@ package sbom
 import (
 	"testing"
 
-	cdx "github.com/jprobinson/cyclonedx-go"
+	cdx "github.com/CycloneDX/cyclonedx-go"
 	"github.com/rs/zerolog"
 	"github.com/stretchr/testify/require"
 )

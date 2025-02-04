@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"path/filepath"
 
-	cdx "github.com/jprobinson/cyclonedx-go"
+	cdx "github.com/CycloneDX/cyclonedx-go"
 	"github.com/rs/zerolog"
 
 	"github.com/jprobinson/cyclonedx-gomod/internal/gomod"

@@ -23,7 +23,7 @@ import (
 	"strings"
 	"time"
 
-	cdx "github.com/jprobinson/cyclonedx-go"
+	cdx "github.com/CycloneDX/cyclonedx-go"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 	"golang.org/x/mod/module"

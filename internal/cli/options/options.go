@@ -23,7 +23,7 @@ import (
 	"os"
 	"strings"
 
-	cdx "github.com/jprobinson/cyclonedx-go"
+	cdx "github.com/CycloneDX/cyclonedx-go"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 

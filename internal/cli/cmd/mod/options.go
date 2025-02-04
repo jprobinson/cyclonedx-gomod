@@ -23,7 +23,7 @@ import (
 	"fmt"
 	"strings"
 
-	cdx "github.com/jprobinson/cyclonedx-go"
+	cdx "github.com/CycloneDX/cyclonedx-go"
 	"github.com/jprobinson/cyclonedx-gomod/internal/cli/options"
 )
 

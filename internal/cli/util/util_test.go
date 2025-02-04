@@ -20,7 +20,7 @@ package util
 import (
 	"testing"
 
-	"github.com/jprobinson/cyclonedx-go"
+	"github.com/CycloneDX/cyclonedx-go"
 	"github.com/jprobinson/cyclonedx-gomod/internal/cli/options"
 	"github.com/stretchr/testify/require"
 )

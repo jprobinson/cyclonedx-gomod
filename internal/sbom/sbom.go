@@ -32,7 +32,7 @@ import (
 	"golang.org/x/crypto/sha3"
 	"golang.org/x/exp/slices"
 
-	cdx "github.com/jprobinson/cyclonedx-go"
+	cdx "github.com/CycloneDX/cyclonedx-go"
 
 	"github.com/jprobinson/cyclonedx-gomod/internal/gomod"
 	"github.com/jprobinson/cyclonedx-gomod/internal/version"

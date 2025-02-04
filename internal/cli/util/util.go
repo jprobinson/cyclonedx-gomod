@@ -23,7 +23,7 @@ import (
 	"os"
 	"time"
 
-	cdx "github.com/jprobinson/cyclonedx-go"
+	cdx "github.com/CycloneDX/cyclonedx-go"
 	"github.com/google/uuid"
 	"github.com/rs/zerolog"
 

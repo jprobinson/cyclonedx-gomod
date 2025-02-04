@@ -20,7 +20,7 @@ package mod
 import (
 	"testing"
 
-	cdx "github.com/jprobinson/cyclonedx-go"
+	cdx "github.com/CycloneDX/cyclonedx-go"
 	"github.com/stretchr/testify/require"
 
 	"github.com/jprobinson/cyclonedx-gomod/internal/cli/options"

@@ -18,7 +18,7 @@
 // Package licensedetect exposes cyclonedx-gomod's license detection functionality.
 package licensedetect
 
-import cdx "github.com/jprobinson/cyclonedx-go"
+import cdx "github.com/CycloneDX/cyclonedx-go"
 
 // Detector is the interface that provides abstraction for license detection strategies.
 //

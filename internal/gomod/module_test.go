@@ -73,7 +73,7 @@ func TestModule_Hash(t *testing.T) {
 func TestModule_BOMRef(t *testing.T) {
 
 	module := Module{
-		Path:    "github.com/jprobinson/cyclonedx-go",
+		Path:    "github.com/CycloneDX/cyclonedx-go",
 		Version: "v0.1.0",
 	}
 	assert.Equal(t, "pkg:golang/github.com/jprobinson/cyclonedx-go@v0.1.0?type=module", module.BOMRef())
@@ -86,7 +86,7 @@ func TestModule_PackageURL(t *testing.T) {
 	goarch := envMap["GOARCH"]
 
 	module := Module{
-		Path:    "github.com/jprobinson/cyclonedx-go",
+		Path:    "github.com/CycloneDX/cyclonedx-go",
 		Version: "v0.1.0",
 	}
 	assert.Equal(t, "pkg:golang/github.com/jprobinson/cyclonedx-go@v0.1.0?type=module&goos="+goos+"&goarch="+goarch, module.PackageURL())
@@ -104,7 +104,7 @@ func TestIsModule(t *testing.T) {
 
 func TestParseModules(t *testing.T) {
 	modulesJSON := `{
-        "Path": "github.com/jprobinson/cyclonedx-go",
+        "Path": "github.com/CycloneDX/cyclonedx-go",
         "Main": true,
         "Dir": "/path/to/cyclonedx-go",
         "GoMod": "/path/to/cyclonedx-go/go.mod",
@@ -124,7 +124,7 @@ func TestParseModules(t *testing.T) {
 
 	assert.Len(t, modules, 2)
 
-	assert.Equal(t, "github.com/jprobinson/cyclonedx-go", modules[0].Path)
+	assert.Equal(t, "github.com/CycloneDX/cyclonedx-go", modules[0].Path)
 	assert.Empty(t, modules[0].Version)
 	assert.True(t, modules[0].Main)
 	assert.False(t, modules[0].Vendored)

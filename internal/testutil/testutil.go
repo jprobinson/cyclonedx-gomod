@@ -26,7 +26,7 @@ import (
 	"strings"
 	"testing"
 
-	cdx "github.com/jprobinson/cyclonedx-go"
+	cdx "github.com/CycloneDX/cyclonedx-go"
 	"github.com/bradleyjkemp/cupaloy/v2"
 	"github.com/rs/zerolog"
 	"github.com/stretchr/testify/assert"

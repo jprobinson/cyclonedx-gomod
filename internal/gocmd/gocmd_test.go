@@ -101,7 +101,7 @@ func TestGetModuleGraph(t *testing.T) {
 
 func TestModWhy(t *testing.T) {
 	buf := new(bytes.Buffer)
-	err := ModWhy(zerolog.Nop(), "../../", []string{"github.com/jprobinson/cyclonedx-go"}, buf)
+	err := ModWhy(zerolog.Nop(), "../../", []string{"github.com/CycloneDX/cyclonedx-go"}, buf)
 	require.NoError(t, err)
 
 	require.Equal(t, `# github.com/jprobinson/cyclonedx-go

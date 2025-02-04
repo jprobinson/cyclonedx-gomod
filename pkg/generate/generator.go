@@ -18,7 +18,7 @@
 // Package generate exposes cyclonedx-gomod's SBOM generation capabilities.
 package generate
 
-import cdx "github.com/jprobinson/cyclonedx-go"
+import cdx "github.com/CycloneDX/cyclonedx-go"
 
 // Generator is the interface that provides abstraction for multiple BOM generation strategies.
 //

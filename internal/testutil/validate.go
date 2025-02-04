@@ -17,7 +17,7 @@
 
 package testutil
 
-import cdx "github.com/jprobinson/cyclonedx-go"
+import cdx "github.com/CycloneDX/cyclonedx-go"
 
 type validator interface {
 	Validate(bom []byte, specVersion cdx.SpecVersion) error

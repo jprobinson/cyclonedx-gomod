@@ -43,6 +43,6 @@ github.com/stretchr/testify/assert
 	require.Len(t, modulePkgs, 3)
 
 	assert.Len(t, modulePkgs["github.com/stretchr/testify"], 3)
-	assert.Len(t, modulePkgs["github.com/jprobinson/cyclonedx-go"], 0)
+	assert.Len(t, modulePkgs["github.com/CycloneDX/cyclonedx-go"], 0)
 	assert.Len(t, modulePkgs["bazil.org/fuse"], 0)
 }
