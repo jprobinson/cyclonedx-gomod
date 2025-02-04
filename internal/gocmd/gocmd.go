@@ -170,6 +170,9 @@ func executeGoCommand(logger zerolog.Logger, args []string, options ...commandOp
 		option(cmd)
 	}
 
+	var serr bytes.Buffer
+	cmd.Stderr = &serr
+
 	logger.Debug().
 		Str("cmd", cmd.String()).
 		Str("dir", cmd.Dir).
@@ -177,7 +180,7 @@ func executeGoCommand(logger zerolog.Logger, args []string, options ...commandOp
 
 	err := cmd.Run()
 	if err != nil {
-		return fmt.Errorf("command `%s` failed: %w", cmd.String(), err)
+		return fmt.Errorf("command `%s` failed: %w - %s", cmd.String(), err, serr.String())
 	}
 
 	return nil
