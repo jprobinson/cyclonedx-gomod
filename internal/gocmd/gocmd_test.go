@@ -74,7 +74,7 @@ func TestListModule(t *testing.T) {
 	mod := make(map[string]interface{})
 	require.NoError(t, json.NewDecoder(buf).Decode(&mod))
 
-	require.Equal(t, "github.com/CycloneDX/cyclonedx-gomod", mod["Path"])
+	require.Equal(t, "github.com/jprobinson/cyclonedx-gomod", mod["Path"])
 	assert.Equal(t, true, mod["Main"])
 }
 
@@ -87,7 +87,7 @@ func TestListModules(t *testing.T) {
 	require.NoError(t, json.NewDecoder(buf).Decode(&mod))
 
 	// Smoke test - is this really the module list?
-	assert.Equal(t, "github.com/CycloneDX/cyclonedx-gomod", mod["Path"])
+	assert.Equal(t, "github.com/jprobinson/cyclonedx-gomod", mod["Path"])
 	assert.Equal(t, true, mod["Main"])
 }
 
@@ -96,16 +96,16 @@ func TestGetModuleGraph(t *testing.T) {
 	err := GetModuleGraph(zerolog.Nop(), "../../", buf)
 	require.NoError(t, err)
 
-	assert.Equal(t, 0, strings.Index(buf.String(), "github.com/CycloneDX/cyclonedx-gomod"))
+	assert.Equal(t, 0, strings.Index(buf.String(), "github.com/jprobinson/cyclonedx-gomod"))
 }
 
 func TestModWhy(t *testing.T) {
 	buf := new(bytes.Buffer)
-	err := ModWhy(zerolog.Nop(), "../../", []string{"github.com/CycloneDX/cyclonedx-go"}, buf)
+	err := ModWhy(zerolog.Nop(), "../../", []string{"github.com/jprobinson/cyclonedx-go"}, buf)
 	require.NoError(t, err)
 
-	require.Equal(t, `# github.com/CycloneDX/cyclonedx-go
-github.com/CycloneDX/cyclonedx-gomod/internal/cli/cmd/mod
-github.com/CycloneDX/cyclonedx-go
+	require.Equal(t, `# github.com/jprobinson/cyclonedx-go
+github.com/jprobinson/cyclonedx-gomod/internal/cli/cmd/mod
+github.com/jprobinson/cyclonedx-go
 `, buf.String())
 }

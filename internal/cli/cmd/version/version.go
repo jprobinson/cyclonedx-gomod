@@ -21,7 +21,7 @@ import (
 	"context"
 	"encoding/json"
 	"flag"
-	"github.com/CycloneDX/cyclonedx-gomod/internal/version"
+	"github.com/jprobinson/cyclonedx-gomod/internal/version"
 	"io"
 	"os"
 	"text/template"

@@ -28,7 +28,7 @@ import (
 
 func TestGetLatestTag(t *testing.T) {
 	repo, err := git.PlainClone(t.TempDir(), false, &git.CloneOptions{
-		URL: "https://github.com/CycloneDX/cyclonedx-go.git",
+		URL: "https://github.com/jprobinson/cyclonedx-go.git",
 	})
 	require.NoError(t, err)
 

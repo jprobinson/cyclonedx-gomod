@@ -23,13 +23,13 @@ import (
 	"os"
 	"time"
 
-	cdx "github.com/CycloneDX/cyclonedx-go"
+	cdx "github.com/jprobinson/cyclonedx-go"
 	"github.com/google/uuid"
 	"github.com/rs/zerolog"
 
-	"github.com/CycloneDX/cyclonedx-gomod/internal/cli/options"
-	"github.com/CycloneDX/cyclonedx-gomod/internal/sbom"
-	"github.com/CycloneDX/cyclonedx-gomod/internal/util"
+	"github.com/jprobinson/cyclonedx-gomod/internal/cli/options"
+	"github.com/jprobinson/cyclonedx-gomod/internal/sbom"
+	"github.com/jprobinson/cyclonedx-gomod/internal/util"
 )
 
 func AddCommonMetadata(logger zerolog.Logger, bom *cdx.BOM) error {

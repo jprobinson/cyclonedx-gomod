@@ -22,11 +22,11 @@ import (
 	"os"
 	"strings"
 
-	cdx "github.com/CycloneDX/cyclonedx-go"
+	cdx "github.com/jprobinson/cyclonedx-go"
 	"github.com/rs/zerolog"
 
-	"github.com/CycloneDX/cyclonedx-gomod/internal/gomod"
-	"github.com/CycloneDX/cyclonedx-gomod/internal/sbom"
+	"github.com/jprobinson/cyclonedx-gomod/internal/gomod"
+	"github.com/jprobinson/cyclonedx-gomod/internal/sbom"
 )
 
 type Option func(logger zerolog.Logger, absFilePath, relFilePath string, component *cdx.Component) error

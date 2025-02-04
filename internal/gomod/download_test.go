@@ -47,7 +47,7 @@ func TestDownload(t *testing.T) {
 
 		downloads, err := Download(zerolog.Nop(), []Module{
 			{
-				Path:    "github.com/CycloneDX/cyclonedx-go",
+				Path:    "github.com/jprobinson/cyclonedx-go",
 				Version: "v0.4.0",
 			},
 		})

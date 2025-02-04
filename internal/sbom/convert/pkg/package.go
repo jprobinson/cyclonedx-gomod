@@ -21,11 +21,11 @@ import (
 	"fmt"
 	"path/filepath"
 
-	cdx "github.com/CycloneDX/cyclonedx-go"
+	cdx "github.com/jprobinson/cyclonedx-go"
 	"github.com/rs/zerolog"
 
-	"github.com/CycloneDX/cyclonedx-gomod/internal/gomod"
-	fileConv "github.com/CycloneDX/cyclonedx-gomod/internal/sbom/convert/file"
+	"github.com/jprobinson/cyclonedx-gomod/internal/gomod"
+	fileConv "github.com/jprobinson/cyclonedx-gomod/internal/sbom/convert/file"
 )
 
 type Option func(zerolog.Logger, gomod.Package, gomod.Module, *cdx.Component) error

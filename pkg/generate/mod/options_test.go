@@ -21,11 +21,11 @@ import (
 	"os"
 	"testing"
 
-	cdx "github.com/CycloneDX/cyclonedx-go"
+	cdx "github.com/jprobinson/cyclonedx-go"
 	"github.com/rs/zerolog"
 	"github.com/stretchr/testify/require"
 
-	"github.com/CycloneDX/cyclonedx-gomod/pkg/licensedetect/local"
+	"github.com/jprobinson/cyclonedx-gomod/pkg/licensedetect/local"
 )
 
 func TestWithComponentType(t *testing.T) {

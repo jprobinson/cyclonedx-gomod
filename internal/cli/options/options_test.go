@@ -20,7 +20,7 @@ package options
 import (
 	"testing"
 
-	cdx "github.com/CycloneDX/cyclonedx-go"
+	cdx "github.com/jprobinson/cyclonedx-go"
 	"github.com/stretchr/testify/require"
 )
 

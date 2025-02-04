@@ -20,7 +20,7 @@ package testutil
 import (
 	"embed"
 	"fmt"
-	cdx "github.com/CycloneDX/cyclonedx-go"
+	cdx "github.com/jprobinson/cyclonedx-go"
 	"github.com/pkg/errors"
 	"net/http"
 

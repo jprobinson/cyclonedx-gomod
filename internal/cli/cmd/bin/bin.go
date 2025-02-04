@@ -22,11 +22,11 @@ import (
 	"flag"
 	"fmt"
 
-	cliUtil "github.com/CycloneDX/cyclonedx-gomod/internal/cli/util"
-	"github.com/CycloneDX/cyclonedx-gomod/internal/sbom"
-	"github.com/CycloneDX/cyclonedx-gomod/pkg/generate/bin"
-	"github.com/CycloneDX/cyclonedx-gomod/pkg/licensedetect"
-	"github.com/CycloneDX/cyclonedx-gomod/pkg/licensedetect/local"
+	cliUtil "github.com/jprobinson/cyclonedx-gomod/internal/cli/util"
+	"github.com/jprobinson/cyclonedx-gomod/internal/sbom"
+	"github.com/jprobinson/cyclonedx-gomod/pkg/generate/bin"
+	"github.com/jprobinson/cyclonedx-gomod/pkg/licensedetect"
+	"github.com/jprobinson/cyclonedx-gomod/pkg/licensedetect/local"
 
 	"github.com/peterbourgon/ff/v3/ffcli"
 )

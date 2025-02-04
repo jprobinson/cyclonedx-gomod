@@ -32,10 +32,10 @@ import (
 	"golang.org/x/crypto/sha3"
 	"golang.org/x/exp/slices"
 
-	cdx "github.com/CycloneDX/cyclonedx-go"
+	cdx "github.com/jprobinson/cyclonedx-go"
 
-	"github.com/CycloneDX/cyclonedx-gomod/internal/gomod"
-	"github.com/CycloneDX/cyclonedx-gomod/internal/version"
+	"github.com/jprobinson/cyclonedx-gomod/internal/gomod"
+	"github.com/jprobinson/cyclonedx-gomod/internal/version"
 )
 
 func AssertLicenses(bom *cdx.BOM) {
@@ -124,7 +124,7 @@ func BuildToolMetadata(logger zerolog.Logger) (*cdx.Tool, error) { //nolint:stat
 		ExternalReferences: &[]cdx.ExternalReference{
 			{
 				Type: cdx.ERTypeVCS,
-				URL:  "https://github.com/CycloneDX/cyclonedx-gomod",
+				URL:  "https://github.com/jprobinson/cyclonedx-gomod",
 			},
 			{
 				Type: cdx.ERTypeWebsite,

@@ -23,7 +23,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/CycloneDX/cyclonedx-gomod/internal/cli/options"
+	"github.com/jprobinson/cyclonedx-gomod/internal/cli/options"
 )
 
 type Options struct {

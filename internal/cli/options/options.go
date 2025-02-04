@@ -23,13 +23,13 @@ import (
 	"os"
 	"strings"
 
-	cdx "github.com/CycloneDX/cyclonedx-go"
+	cdx "github.com/jprobinson/cyclonedx-go"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 
 	"github.com/google/uuid"
 
-	"github.com/CycloneDX/cyclonedx-gomod/internal/util"
+	"github.com/jprobinson/cyclonedx-gomod/internal/util"
 )
 
 // ValidationError represents a validation error for options.

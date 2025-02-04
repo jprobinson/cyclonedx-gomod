@@ -22,14 +22,14 @@ import (
 	"flag"
 	"fmt"
 
-	cdx "github.com/CycloneDX/cyclonedx-go"
+	cdx "github.com/jprobinson/cyclonedx-go"
 	"github.com/peterbourgon/ff/v3/ffcli"
 
-	cliUtil "github.com/CycloneDX/cyclonedx-gomod/internal/cli/util"
-	"github.com/CycloneDX/cyclonedx-gomod/internal/sbom"
-	"github.com/CycloneDX/cyclonedx-gomod/pkg/generate/mod"
-	"github.com/CycloneDX/cyclonedx-gomod/pkg/licensedetect"
-	"github.com/CycloneDX/cyclonedx-gomod/pkg/licensedetect/local"
+	cliUtil "github.com/jprobinson/cyclonedx-gomod/internal/cli/util"
+	"github.com/jprobinson/cyclonedx-gomod/internal/sbom"
+	"github.com/jprobinson/cyclonedx-gomod/pkg/generate/mod"
+	"github.com/jprobinson/cyclonedx-gomod/pkg/licensedetect"
+	"github.com/jprobinson/cyclonedx-gomod/pkg/licensedetect/local"
 )
 
 func New() *ffcli.Command {

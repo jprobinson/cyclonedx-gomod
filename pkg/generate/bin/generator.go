@@ -23,16 +23,16 @@ import (
 	"strings"
 	"time"
 
-	cdx "github.com/CycloneDX/cyclonedx-go"
+	cdx "github.com/jprobinson/cyclonedx-go"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 	"golang.org/x/mod/module"
 
-	"github.com/CycloneDX/cyclonedx-gomod/internal/gomod"
-	"github.com/CycloneDX/cyclonedx-gomod/internal/sbom"
-	modConv "github.com/CycloneDX/cyclonedx-gomod/internal/sbom/convert/module"
-	"github.com/CycloneDX/cyclonedx-gomod/pkg/generate"
-	"github.com/CycloneDX/cyclonedx-gomod/pkg/licensedetect"
+	"github.com/jprobinson/cyclonedx-gomod/internal/gomod"
+	"github.com/jprobinson/cyclonedx-gomod/internal/sbom"
+	modConv "github.com/jprobinson/cyclonedx-gomod/internal/sbom/convert/module"
+	"github.com/jprobinson/cyclonedx-gomod/pkg/generate"
+	"github.com/jprobinson/cyclonedx-gomod/pkg/licensedetect"
 )
 
 type generator struct {

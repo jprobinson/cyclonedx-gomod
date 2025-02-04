@@ -25,8 +25,8 @@ import (
 
 	"github.com/rs/zerolog/log"
 
-	"github.com/CycloneDX/cyclonedx-gomod/internal/cli"
-	"github.com/CycloneDX/cyclonedx-gomod/internal/cli/options"
+	"github.com/jprobinson/cyclonedx-gomod/internal/cli"
+	"github.com/jprobinson/cyclonedx-gomod/internal/cli/options"
 )
 
 func main() {

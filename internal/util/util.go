@@ -23,7 +23,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	cdx "github.com/CycloneDX/cyclonedx-go"
+	cdx "github.com/jprobinson/cyclonedx-go"
 )
 
 func FileExists(path string) bool {

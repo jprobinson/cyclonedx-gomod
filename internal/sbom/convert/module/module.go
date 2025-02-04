@@ -23,12 +23,12 @@ import (
 	"regexp"
 	"strings"
 
-	cdx "github.com/CycloneDX/cyclonedx-go"
+	cdx "github.com/jprobinson/cyclonedx-go"
 	"github.com/rs/zerolog"
 
-	"github.com/CycloneDX/cyclonedx-gomod/internal/gomod"
-	pkgConv "github.com/CycloneDX/cyclonedx-gomod/internal/sbom/convert/pkg"
-	"github.com/CycloneDX/cyclonedx-gomod/pkg/licensedetect"
+	"github.com/jprobinson/cyclonedx-gomod/internal/gomod"
+	pkgConv "github.com/jprobinson/cyclonedx-gomod/internal/sbom/convert/pkg"
+	"github.com/jprobinson/cyclonedx-gomod/pkg/licensedetect"
 )
 
 type Option func(zerolog.Logger, gomod.Module, *cdx.Component) error

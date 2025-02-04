@@ -29,7 +29,7 @@ import (
 	"github.com/rs/zerolog"
 	"golang.org/x/exp/slices"
 
-	"github.com/CycloneDX/cyclonedx-gomod/internal/gocmd"
+	"github.com/jprobinson/cyclonedx-gomod/internal/gocmd"
 )
 
 // See https://golang.org/cmd/go/#hdr-List_packages_or_modules

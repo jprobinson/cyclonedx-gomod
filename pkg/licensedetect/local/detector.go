@@ -23,12 +23,12 @@ import (
 	"fmt"
 	"sort"
 
-	cdx "github.com/CycloneDX/cyclonedx-go"
+	cdx "github.com/jprobinson/cyclonedx-go"
 	"github.com/go-enry/go-license-detector/v4/licensedb"
 	"github.com/go-enry/go-license-detector/v4/licensedb/filer"
 	"github.com/rs/zerolog"
 
-	"github.com/CycloneDX/cyclonedx-gomod/pkg/licensedetect"
+	"github.com/jprobinson/cyclonedx-gomod/pkg/licensedetect"
 )
 
 const minDetectionConfidence = 0.85

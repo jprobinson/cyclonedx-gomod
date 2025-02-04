@@ -23,17 +23,17 @@ import (
 	"path/filepath"
 	"strings"
 
-	cdx "github.com/CycloneDX/cyclonedx-go"
+	cdx "github.com/jprobinson/cyclonedx-go"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 
-	"github.com/CycloneDX/cyclonedx-gomod/internal/gocmd"
-	"github.com/CycloneDX/cyclonedx-gomod/internal/gomod"
-	"github.com/CycloneDX/cyclonedx-gomod/internal/sbom"
-	modConv "github.com/CycloneDX/cyclonedx-gomod/internal/sbom/convert/module"
-	pkgConv "github.com/CycloneDX/cyclonedx-gomod/internal/sbom/convert/pkg"
-	"github.com/CycloneDX/cyclonedx-gomod/pkg/generate"
-	"github.com/CycloneDX/cyclonedx-gomod/pkg/licensedetect"
+	"github.com/jprobinson/cyclonedx-gomod/internal/gocmd"
+	"github.com/jprobinson/cyclonedx-gomod/internal/gomod"
+	"github.com/jprobinson/cyclonedx-gomod/internal/sbom"
+	modConv "github.com/jprobinson/cyclonedx-gomod/internal/sbom/convert/module"
+	pkgConv "github.com/jprobinson/cyclonedx-gomod/internal/sbom/convert/pkg"
+	"github.com/jprobinson/cyclonedx-gomod/pkg/generate"
+	"github.com/jprobinson/cyclonedx-gomod/pkg/licensedetect"
 )
 
 type generator struct {

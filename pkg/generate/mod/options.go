@@ -18,10 +18,10 @@
 package mod
 
 import (
-	cdx "github.com/CycloneDX/cyclonedx-go"
+	cdx "github.com/jprobinson/cyclonedx-go"
 	"github.com/rs/zerolog"
 
-	"github.com/CycloneDX/cyclonedx-gomod/pkg/licensedetect"
+	"github.com/jprobinson/cyclonedx-gomod/pkg/licensedetect"
 )
 
 // Option allows for customization of the generator using the

@@ -24,13 +24,13 @@ import (
 	"path/filepath"
 	"testing"
 
-	cdx "github.com/CycloneDX/cyclonedx-go"
+	cdx "github.com/jprobinson/cyclonedx-go"
 	"github.com/rs/zerolog"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/CycloneDX/cyclonedx-gomod/internal/gocmd"
-	"github.com/CycloneDX/cyclonedx-gomod/internal/gomod"
+	"github.com/jprobinson/cyclonedx-gomod/internal/gocmd"
+	"github.com/jprobinson/cyclonedx-gomod/internal/gomod"
 )
 
 type stubLicenseDetector struct {
@@ -263,12 +263,12 @@ func TestToComponent(t *testing.T) {
 
 func TestResolveVCSURL(t *testing.T) {
 	t.Run("GitHub", func(t *testing.T) {
-		require.Equal(t, "https://github.com/CycloneDX/cyclonedx-go", resolveVCSURL("github.com/CycloneDX/cyclonedx-go"))
+		require.Equal(t, "https://github.com/jprobinson/cyclonedx-go", resolveVCSURL("github.com/jprobinson/cyclonedx-go"))
 	})
 
 	t.Run("GitHub with major version", func(t *testing.T) {
-		assert.Equal(t, "https://github.com/CycloneDX/cyclonedx-go", resolveVCSURL("github.com/CycloneDX/cyclonedx-go/v2"))
-		assert.Equal(t, "https://github.com/CycloneDX/cyclonedx-go", resolveVCSURL("github.com/CycloneDX/cyclonedx-go/v222"))
+		assert.Equal(t, "https://github.com/jprobinson/cyclonedx-go", resolveVCSURL("github.com/jprobinson/cyclonedx-go/v2"))
+		assert.Equal(t, "https://github.com/jprobinson/cyclonedx-go", resolveVCSURL("github.com/jprobinson/cyclonedx-go/v222"))
 	})
 
 	t.Run("gopkg.in variant 1", func(t *testing.T) {

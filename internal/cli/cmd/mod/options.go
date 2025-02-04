@@ -23,8 +23,8 @@ import (
 	"fmt"
 	"strings"
 
-	cdx "github.com/CycloneDX/cyclonedx-go"
-	"github.com/CycloneDX/cyclonedx-gomod/internal/cli/options"
+	cdx "github.com/jprobinson/cyclonedx-go"
+	"github.com/jprobinson/cyclonedx-gomod/internal/cli/options"
 )
 
 type Options struct {

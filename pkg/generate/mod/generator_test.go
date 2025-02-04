@@ -22,13 +22,13 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/CycloneDX/cyclonedx-go"
+	"github.com/jprobinson/cyclonedx-go"
 	"github.com/bradleyjkemp/cupaloy/v2"
 	"github.com/rs/zerolog"
 	"github.com/stretchr/testify/require"
 
-	"github.com/CycloneDX/cyclonedx-gomod/internal/testutil"
-	"github.com/CycloneDX/cyclonedx-gomod/pkg/licensedetect/local"
+	"github.com/jprobinson/cyclonedx-gomod/internal/testutil"
+	"github.com/jprobinson/cyclonedx-gomod/pkg/licensedetect/local"
 )
 
 func TestNewGenerator(t *testing.T) {

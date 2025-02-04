@@ -20,10 +20,10 @@ package mod
 import (
 	"testing"
 
-	cdx "github.com/CycloneDX/cyclonedx-go"
+	cdx "github.com/jprobinson/cyclonedx-go"
 	"github.com/stretchr/testify/require"
 
-	"github.com/CycloneDX/cyclonedx-gomod/internal/cli/options"
+	"github.com/jprobinson/cyclonedx-gomod/internal/cli/options"
 )
 
 func TestModOptions_Validate(t *testing.T) {
